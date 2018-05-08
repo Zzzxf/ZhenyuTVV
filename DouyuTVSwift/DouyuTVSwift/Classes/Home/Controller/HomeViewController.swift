@@ -19,6 +19,22 @@ class HomeViewController: UIViewController {
         return titleView
     }()
 
+    private lazy var pageContentView : PageContentView = {
+        let contentH = kScreenHeight - kStatusBarH - kNavigationBarH - kTitleViewH
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenWidth, height: contentH)
+
+        var childVcs = [UIViewController]()
+        for _ in 0..<4{
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+            childVcs.append(vc)
+
+
+        }
+        let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        return contentView
+    }()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +55,8 @@ extension HomeViewController{
 
         view.addSubview(pageTitleView)
 
+        view.addSubview(pageContentView)
+        pageContentView.backgroundColor = UIColor.purple
     }
 
     private func setupNavigationBar(){
@@ -51,17 +69,10 @@ extension HomeViewController{
         let size = CGSize(width: 40, height: 40)
 
 //右侧按钮
-//        let historyBtn = UIButton()
-//        historyBtn.setImage(UIImage(named: "dy_send_message"), for: .normal)
-//        historyBtn.setImage(UIImage(named: "noble_renew_0032"), for: .highlighted)
-//        historyBtn.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+
         let historyItem = UIBarButtonItem(imageName: "dy_send_message", highlightedImage: "noble_renew_0032", size: size)
        // let historyItem = UIBarButtonItem.createItem(imageName: "dy_send_message", highlightedImage: "noble_renew_0032", size: size)
 
-//        let searchBtn = UIButton()
-//        searchBtn.setImage(UIImage(named: "anchor_music_search_button_icon"), for: .normal)
-//        searchBtn.setImage(UIImage(named: "noble_renew_0032"), for: .highlighted)
-//        searchBtn.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
         let searchItem = UIBarButtonItem(imageName: "anchor_music_search_button_icon", highlightedImage: "noble_renew_0032", size: size)
         //let searchItem = UIBarButtonItem.createItem(imageName: "anchor_music_search_button_icon", highlightedImage: "noble_renew_0032", size: size)
 //
