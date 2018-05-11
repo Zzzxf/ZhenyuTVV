@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="DouyuTVSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="287" height="296"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="296"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhn-EB-KT0">
+                        <rect key="frame" x="0.0" y="264" width="80" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="RaK-pz-5e1"/>
+                            <constraint firstAttribute="width" constant="80" id="YlH-Gk-6qs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="上海市" image="btn_disable_gift_highlight">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一颗赛艇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjH-Qn-fJo">
+                        <rect key="frame" x="0.0" y="239" width="282" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="nhl-99-xwe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanCode_login_default" translatesAutoresizingMaskIntoConstraints="NO" id="LZO-64-Pgr" customClass="card_rank_hori_live">
+                        <rect key="frame" x="0.0" y="0.0" width="287" height="234"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcI-f4-TXf">
+                        <rect key="frame" x="209" y="8" width="70" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="FeA-yK-6Tq"/>
+                            <constraint firstAttribute="width" constant="70" id="hHy-kO-Y1b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="666在线">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mhn-EB-KT0" secondAttribute="bottom" constant="10" id="FM3-Df-KuE"/>
+                <constraint firstAttribute="trailing" secondItem="LZO-64-Pgr" secondAttribute="trailing" id="Gex-xF-yGA"/>
+                <constraint firstItem="DjH-Qn-fJo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LOL-ey-8A9"/>
+                <constraint firstItem="LZO-64-Pgr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OOh-QQ-kZF"/>
+                <constraint firstAttribute="trailing" secondItem="DjH-Qn-fJo" secondAttribute="trailing" constant="5" id="Ppz-t7-SlM"/>
+                <constraint firstItem="Mhn-EB-KT0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YHi-3B-wLi"/>
+                <constraint firstItem="Mhn-EB-KT0" firstAttribute="top" secondItem="DjH-Qn-fJo" secondAttribute="bottom" constant="5" id="ZNB-rX-gm1"/>
+                <constraint firstItem="CcI-f4-TXf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="evj-hl-DRf"/>
+                <constraint firstItem="LZO-64-Pgr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hGA-ts-GVJ"/>
+                <constraint firstItem="DjH-Qn-fJo" firstAttribute="top" secondItem="LZO-64-Pgr" secondAttribute="bottom" constant="5" id="xPn-sg-ghD"/>
+                <constraint firstAttribute="trailing" secondItem="CcI-f4-TXf" secondAttribute="trailing" constant="8" id="ya1-3o-CjK"/>
+            </constraints>
+            <size key="customSize" width="287" height="296"/>
+            <connections>
+                <outlet property="cityBtn" destination="Mhn-EB-KT0" id="tqh-ob-YOh"/>
+                <outlet property="iconImageView" destination="LZO-64-Pgr" id="LgH-q2-J52"/>
+                <outlet property="nickNameLabel" destination="DjH-Qn-fJo" id="7LR-y5-dQ7"/>
+                <outlet property="onlineBtn" destination="CcI-f4-TXf" id="2Gq-g2-98v"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="28"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_disable_gift_highlight" width="30" height="30"/>
+        <image name="scanCode_login_default" width="200" height="200"/>
+    </resources>
+</document>

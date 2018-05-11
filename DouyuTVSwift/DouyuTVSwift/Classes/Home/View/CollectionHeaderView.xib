@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CollectionHeaderView" customModule="DouyuTVSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Pi-AE-pNV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="USM-Ju-c9z"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free_flow_qq_video" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-2O-QEi">
+                    <rect key="frame" x="10" y="21" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="9Vz-gx-OJD"/>
+                        <constraint firstAttribute="width" constant="18" id="SfQ-MB-FhU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2u-hX-X2P">
+                    <rect key="frame" x="33" y="20.5" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-U8-Xaf">
+                    <rect key="frame" x="250" y="15.5" width="60" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="MaP-fV-X2t"/>
+                        <constraint firstAttribute="height" constant="29" id="TQ7-mC-abT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="更多&gt;">
+                        <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xkm-U8-Xaf" secondAttribute="trailing" constant="10" id="2Kz-Dk-FLU"/>
+                <constraint firstItem="6Pi-AE-pNV" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="2Rj-yq-bBH"/>
+                <constraint firstItem="xkm-U8-Xaf" firstAttribute="centerY" secondItem="t2u-hX-X2P" secondAttribute="centerY" id="BAg-LU-OJa"/>
+                <constraint firstItem="t2u-hX-X2P" firstAttribute="centerY" secondItem="wV2-2O-QEi" secondAttribute="centerY" id="ECv-aA-JMk"/>
+                <constraint firstItem="wV2-2O-QEi" firstAttribute="top" secondItem="6Pi-AE-pNV" secondAttribute="bottom" constant="11" id="Eph-bS-rDH"/>
+                <constraint firstItem="wV2-2O-QEi" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="XGT-lg-aRE"/>
+                <constraint firstItem="6Pi-AE-pNV" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="eMl-CV-9kZ"/>
+                <constraint firstAttribute="trailing" secondItem="6Pi-AE-pNV" secondAttribute="trailing" id="kEn-OA-g1P"/>
+                <constraint firstItem="t2u-hX-X2P" firstAttribute="leading" secondItem="wV2-2O-QEi" secondAttribute="trailing" constant="5" id="pA2-YS-co4"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="wV2-2O-QEi" id="tpc-qq-Q5W"/>
+                <outlet property="titleLabel" destination="t2u-hX-X2P" id="hfg-JE-3AY"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="free_flow_qq_video" width="23" height="23"/>
+    </resources>
+</document>

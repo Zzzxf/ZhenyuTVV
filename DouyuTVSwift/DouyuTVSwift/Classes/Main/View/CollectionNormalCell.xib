@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="DouyuTVSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="213"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="267" height="213"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flame7" translatesAutoresizingMaskIntoConstraints="NO" id="9XD-iA-U6o">
+                        <rect key="frame" x="5" y="189" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="OHe-dE-Eh6"/>
+                            <constraint firstAttribute="height" constant="14" id="pmS-sz-dna"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QWERTY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zar-Fs-xUz">
+                        <rect key="frame" x="24" y="185.5" width="233" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Sv3-2J-hDk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanCode_login_default" translatesAutoresizingMaskIntoConstraints="NO" id="gX9-Kp-1s5">
+                        <rect key="frame" x="0.0" y="0.0" width="267" height="180.5"/>
+                        <color key="backgroundColor" red="0.73296662414965985" green="0.76286139455782309" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zzzxf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnP-Eu-w2G">
+                        <rect key="frame" x="5" y="153.5" width="67" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="CUQ-uy-BcU"/>
+                            <constraint firstAttribute="width" constant="67" id="RTO-Vh-ZIS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdi-dV-egy">
+                        <rect key="frame" x="187" y="151.5" width="75" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="6666在线" image="dyla_精彩时刻助手"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9XD-iA-U6o" secondAttribute="bottom" constant="10" id="0xu-RK-jez"/>
+                <constraint firstItem="Zar-Fs-xUz" firstAttribute="centerY" secondItem="9XD-iA-U6o" secondAttribute="centerY" id="3ag-jR-RCi"/>
+                <constraint firstItem="Zar-Fs-xUz" firstAttribute="top" secondItem="gX9-Kp-1s5" secondAttribute="bottom" constant="5" id="5he-kP-p5l"/>
+                <constraint firstItem="gX9-Kp-1s5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="74h-dM-7hR"/>
+                <constraint firstItem="9XD-iA-U6o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="8y1-is-QAL"/>
+                <constraint firstItem="gX9-Kp-1s5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9RH-F0-eWt"/>
+                <constraint firstAttribute="trailing" secondItem="gX9-Kp-1s5" secondAttribute="trailing" id="gPl-08-wbh"/>
+                <constraint firstItem="Rdi-dV-egy" firstAttribute="trailing" secondItem="gX9-Kp-1s5" secondAttribute="trailing" constant="-5" id="hbm-2N-aOk"/>
+                <constraint firstItem="WnP-Eu-w2G" firstAttribute="bottom" secondItem="gX9-Kp-1s5" secondAttribute="bottom" constant="-5" id="iwz-95-uUo"/>
+                <constraint firstItem="WnP-Eu-w2G" firstAttribute="leading" secondItem="gX9-Kp-1s5" secondAttribute="leading" constant="5" id="lQM-iO-lgI"/>
+                <constraint firstItem="Rdi-dV-egy" firstAttribute="bottom" secondItem="gX9-Kp-1s5" secondAttribute="bottom" constant="-5" id="lgE-Xb-8HI"/>
+                <constraint firstItem="Zar-Fs-xUz" firstAttribute="leading" secondItem="9XD-iA-U6o" secondAttribute="trailing" constant="5" id="uhi-AJ-V5d"/>
+                <constraint firstAttribute="trailing" secondItem="Zar-Fs-xUz" secondAttribute="trailing" constant="10" id="zM5-S4-zXm"/>
+            </constraints>
+            <size key="customSize" width="267" height="213"/>
+            <connections>
+                <outlet property="iconImageView" destination="gX9-Kp-1s5" id="dlA-sj-nOr"/>
+                <outlet property="nickNameLabel" destination="WnP-Eu-w2G" id="iM9-hW-uKS"/>
+                <outlet property="onlineBtn" destination="Rdi-dV-egy" id="O0K-Sa-9hD"/>
+                <outlet property="roomNameLabel" destination="Zar-Fs-xUz" id="u1z-t2-dNF"/>
+            </connections>
+            <point key="canvasLocation" x="17.5" y="92.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dyla_精彩时刻助手" width="24" height="24"/>
+        <image name="flame7" width="42" height="65"/>
+        <image name="scanCode_login_default" width="200" height="200"/>
+    </resources>
+</document>
